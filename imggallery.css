@@ -1,0 +1,319 @@
+.top_container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: auto;
+    width: 100%;
+    border-bottom: rgba(4, 112, 175, 0.801) 1px solid;
+    position: sticky;
+    top: 0;
+    background-color: bisque;
+    z-index: 1;
+    transition: 500ms;
+    font-size: 30px;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+}
+
+ul > li{
+    padding: 60px;
+    list-style-type: none;
+    transition: transform 300ms ease-in;
+}
+
+.top_container > ul > li > a{
+    text-decoration: none;
+    letter-spacing: 5px;
+    font-family: 'IM Fell DW Pica SC', serif;
+    color:black;
+}
+
+.top_container > ul > li:hover{
+    transform: perspective(700px) scaleZ(0.7) translateZ(200px); 
+}
+
+.ACA-logo{
+    height: 200px;
+    width: 200px;
+    transition: transform 2s ease-in 500ms;
+}
+
+.ACA-logo:hover{
+    transform: rotate3d(0.5, 0.5, 0.5, 360deg);
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    height: 150px; 
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+}
+
+.ACA_link{
+    color:whitesmoke; 
+}
+
+body, html{
+    margin: 0;
+    padding:0;
+    height: auto;
+    width:auto;
+    overflow-x: hidden;
+    background-image: url('https://images.unsplash.com/photo-1574710253427-7439259efafb?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=934&q=80');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.heading_container{
+    width:100%;
+    height: 150px; 
+    padding: 15px 0;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(57, 136, 201);
+    font-family: 'Cinzel', serif;
+}
+
+.heading_backdrop{
+    display: flex;
+    height: 200px;
+    background-color: white;
+    border-radius: 5px;
+    align-items: center;
+    margin: 40px 0; 
+    border: black solid 2px;
+    opacity: 0.8;
+}
+
+h1{
+    font-size:60px;
+    font-style: italic;
+    text-shadow: 2px 2px 2px black;
+}
+
+h2{
+    font-size: 20px;
+}
+
+#main_container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: auto;
+    width:auto;
+    padding: 50px;
+    justify-content: space-between;
+}
+
+img{
+    height: 250px;
+    width:250px
+}
+
+#image_container_1{
+    position: relative;
+    padding: 10px;
+    background-color: white;
+    border: black 2px solid;
+    border-radius: 10px;
+    margin-bottom:40px;
+}
+
+#image_container_2{
+    position: relative;
+    padding: 10px;
+    background-color: white;
+    border: black 2px solid;
+    border-radius: 10px;
+    margin-bottom:40px;
+}
+
+#image_container_3{
+    position: relative;
+    padding: 10px;
+    background-color: white;
+    border: black 2px solid;
+    border-radius: 10px;
+    margin-bottom:40px;
+}
+
+#image_container_4{
+    position: relative;
+    padding: 10px;
+    background-color: white;
+    border: black 2px solid;
+    border-radius: 10px;
+    margin-bottom:40px;
+}
+
+#image_container_5{
+    position: relative;
+    padding: 10px;
+    background-color: white;
+    border: black 2px solid;
+    border-radius: 10px;
+}
+
+#image_container_6{
+    position: relative;
+    padding: 10px;
+    background-color: white;
+    border: black 2px solid;
+    border-radius: 10px;
+}
+
+#image_container_7{
+    position: relative;
+    padding: 10px;
+    background-color: white;
+    border: black 2px solid;
+    border-radius: 10px;
+}
+
+#image_container_8{
+    position: relative;
+    padding: 10px;
+    background-color: white;
+    border: black 2px solid;
+    border-radius: 10px;
+}
+
+.text_box{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    transition:500ms cubic-bezier(1,0.5,0.5,1);
+    background-color: black;
+    opacity: 0;
+}
+
+.text_box:hover{
+    opacity:0.8;
+}
+
+.text{
+    font-size: 20px;
+    color: white;
+    position: absolute;
+    text-align:center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.animate__fadeInLeft{
+    animation: fadeInLeft;
+    animation-duration: 10s;
+    animation-delay: 1s;
+    animation-timing-function: ease-in-out;
+}
+
+.animate__fadeInDown{
+    animation: fadeInDown;
+    animation-duration: 10s;
+    animation-delay: 1s;
+    animation-timing-function: ease-in-out;
+}
+
+.animate__fadeInRight{
+    animation: fadeInRight;
+    animation-duration: 10s;
+    animation-delay: 1s;
+    animation-timing-function: ease-in-out;
+}
+
+.animate__fadeInUp{
+    animation: fadeInUp;
+    animation-duration: 10s;
+    animation-delay: 1s;
+    animation-timing-function: ease-in-out;
+}
+
+@media(min-device-width:280px) and (max-device-width:1024px){
+    .top_container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: auto;
+    }
+
+    ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        text-align: center;
+    }
+
+    .top_container > ul> li{
+        padding: 20px;
+    }
+
+    #image_container_5{
+        margin-bottom: 40px;
+    }
+
+    #image_container_6{
+        margin-bottom: 40px;
+    }
+
+    .heading_container{
+        text-align: center;
+        height: 200px;
+    }
+
+    .heading_backdrop{
+        height: 250px;
+    }
+}
+
+@media(max-device-width:2560px){
+
+    #image_container_5{
+        margin-bottom: 40px;
+    }
+
+    #image_container_6{
+        margin-bottom: 40px;
+    }
+
+    #image_container_7{
+        margin-bottom: 40px;
+    }
+
+    #image_container_8{
+        margin-bottom: 40px;
+    }
+}
+
+@media(max-device-width:540px){
+    #main_container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding:0;
+        justify-content: center;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+}

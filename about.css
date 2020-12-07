@@ -1,0 +1,171 @@
+.top_container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: auto;
+    width: 100%;
+    border-bottom: rgba(4, 112, 175, 0.801) 1px solid;
+    background-color: bisque;
+    transition: 500ms;
+    font-size: 30px;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+}
+
+ul > li{
+    padding: 60px;
+    list-style-type: none;
+    transition: transform 300ms ease-in;
+}
+
+.top_container > ul > li > a{
+    text-decoration: none;
+    letter-spacing: 5px;
+    font-family: 'IM Fell DW Pica SC', serif;
+    color:black;
+}
+
+.top_container > ul > li:hover{
+    transform: perspective(700px) scaleZ(0.7) translateZ(200px); 
+}
+
+.ACA-logo{
+    height: 200px;
+    width: 200px;
+    transition: transform 2s ease-in 500ms;
+}
+
+.ACA-logo:hover{
+    transform: rotate3d(0.5, 0.5, 0.5, 360deg);
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    height: 150px; 
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+}
+
+.ACA_link{
+    color:black; 
+}
+
+body, html{
+    margin: 0;
+    padding:0;
+    height: auto;
+    width:auto;
+    overflow-x: hidden;
+    background-image: url('https://images.unsplash.com/photo-1521666753361-d87de0363001?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80');
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.main_container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 40px 0;
+    width: auto;
+    height:500px; 
+    padding:30px;
+    border-radius: 10px;
+    background-color: rgb(65, 134, 117);
+}
+
+.img_container{
+   padding: 20px;
+   margin-right:40px;
+   background-color: rgb(228, 209, 209);
+   border-radius: 5%;
+}
+
+#me{
+    border-radius: 5%;
+    border: 3px solid black;
+    color: inherit;
+}
+
+.info_container{
+    font-size: 20px;
+    line-height: 26px;
+    font-family: 'Patua One', cursive;
+    font-style: italic;
+}
+
+.backdrop{
+    margin-top:75px;
+    display: flex;
+    align-items: center;
+    background-color: wheat;
+    width: auto;
+    height: 600px;
+    border-top: 5px solid black;
+    border-bottom: 5px solid black;
+    opacity: 0.865;
+}
+
+.bio_title{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    font-size: 80px;
+    font-family: 'Cormorant Garamond', serif;
+    color: black;
+    letter-spacing: 2px;
+}
+
+@media(min-device-width:280px) and (max-device-width:1024px){
+
+    .top_container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: auto;
+    }
+
+    ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        text-align: center;
+
+    }
+
+    .top_container > ul> li{
+        padding: 20px;
+    }
+
+    .main_container{
+        height: auto;
+        width: auto;
+        position: relative;
+    }
+
+    .backdrop{
+        height: auto;
+        width: auto;
+        position: relative;
+    }
+}
+
+@media(max-device-width: 425px){
+    .main_container{
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+    }
+}
+

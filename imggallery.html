@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./imggallery.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+DW+Pica+SC&display=swap" rel="stylesheet">
+    <script src="./main.js"></script>
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body>
+    <header class="top_container" id="myHeader">
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./resume.html">Resume</a></li>
+        </ul>
+        <img class="ACA-logo" src="https://cdn.evbuc.com/eventlogos/188084824/acastandardcirclefullname.png" alt="logo">
+        <ul>
+            <li><a href="./contactme.html">Contact</a></li>
+            <li><a href="./about.html">About</a></li>
+        </ul>
+    </header>
+    <main>
+        <div class="heading_backdrop">
+            <div class="heading_container">
+                <h1>Image Gallery</h1>
+                <h2>Click the images and check out my work!</h2>
+            </div>
+        </div>
+        <div class="animate__animated animate__fadeIn" onclick="fadeIn()" id="main_container">
+            <div class="animate__animated animate__fadeInLeft" onclick="window.location='https://jamesmessina.github.io/calculator-app-101/'" id="image_container_1">
+                <img src="./Screenshot (2).png" alt="calc_website">
+                <div class="text_box">
+                    <h3 class="text">Functioning Calculator Website</h3>
+                </div>
+            </div>
+            <div class="animate__animated animate__fadeInDown" onclick="window.location='https://jamesmessina.github.io/hairSalonWebsite-/'" id="image_container_2">
+                <img src="./Screenshot (4).png" alt="hair_website">
+                <div class="text_box">
+                    <h3 class="text">BarberShop Website</h3>
+                </div>
+            </div>
+            <div class="animate__animated animate__fadeInDown"onclick="window.location='https://jamesmessina.github.io/First_Responsive_Website/'" id="image_container_3">
+                <img src="./Screenshot (6).png" alt="first_website">
+                <div class="text_box">
+                    <h3 class="text">First Responsive Website</h3>
+                </div>
+            </div>
+            <div class="animate__animated animate__fadeInRight" onclick="window.location='https://jamesmessina.github.io/TicTacToe-101/'" id="image_container_4">
+                <img src="./Screenshot (8).png" alt="tic_tac_toe">
+                <div class="text_box">
+                    <h3 class="text">Tic Tac Toe</h3>
+                </div>
+            </div>
+            <div class="animate__animated animate__fadeInLeft" onclick="window.location='https://jamesmessina.github.io/Dummy-Data-Todo-List/'" id="image_container_5">
+                <img src="./Screenshot (9).png" alt="todo_list">
+                <div class="text_box">
+                    <h3 class="text">TODO List</h3>
+                </div>
+            </div>
+            <div class="animate__animated animate__fadeInUp" onclick="window.location='https://jamesmessina.github.io/Conflicts-Transformed-revised/'" id="image_container_6">
+                <img src="./Screenshot (11).png" alt="conflict_transformed">
+                <div class="text_box">
+                    <h3 class="text">Conflict-Transformed Site</h3>
+                </div>
+            </div>
+            <div class="animate__animated animate__fadeInUp" onclick="window.location='https://jamesmessina.github.io/Build-the-NASA-Page/'" id="image_container_7">
+                <img src="./Screenshot (12).png" alt="nasa">
+                <div class="text_box">
+                    <h3 class="text">NASA Website</h3>
+                </div>
+            </div>
+            <div class="animate__animated animate__fadeInRight" onclick="window.location='https://jamesmessina.github.io/ACA-james-messina-portfolio/aboutPage.html'" id="image_container_8">
+                <img src="./Screenshot (14).png" alt="originalbio">
+                <div class="text_box">
+                    <h3 class="text">Original Bio Page</h3>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="bottom_container">
+                <a class="ACA_link" href="https://austincodingacademy.com/">© Austin Coding Academy</a>
+            </div>
+        </footer>
+    </main>
+</body>
+</html>

@@ -1,0 +1,220 @@
+body, html{
+    margin: 0;
+    height: 100%;
+    overflow-x: hidden;
+    max-width: 100%;
+    background-image: url('https://images.unsplash.com/photo-1606245766933-b194a66b0380?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=2000&q=80');
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+
+.top_container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: auto;
+    width: 100%;
+    border-bottom: rgba(4, 112, 175, 0.801) 1px solid;
+    position: sticky;
+    position: -webkit-sticky; 
+    top: 0;
+    background-color: bisque;
+    z-index: 1;
+    transition: 500ms;
+    font-size: 30px;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+}
+
+ul > li{
+    padding: 60px;
+    list-style-type: none;
+    transition: transform 300ms ease-in;
+}
+
+.top_container > ul > li > a{
+    text-decoration: none;
+    letter-spacing: 5px;
+    font-family: 'IM Fell DW Pica SC', serif;
+    color:black;
+}
+
+.top_container > ul > li:hover{
+    transform: perspective(700px) scaleZ(0.7) translateZ(200px); 
+}
+
+.ACA-logo{
+    height: 200px;
+    width: 200px;
+    transition: transform 2s ease-in 500ms;
+}
+
+.ACA-logo:hover{
+    transform: rotate3d(0.5, 0.5, 0.5, 360deg);
+}
+
+.title_container{
+    display: flex;
+    flex-direction: column;
+    justify-content:center; 
+    text-align: center;
+    align-items: center;
+    height: 275px;
+    width: 100%;
+    background:  rgba(58, 114, 146, 0.801); 
+    color:black;
+}
+
+.title_backdrop{
+    display: flex;
+    height: 300px;
+    background-color: rgb(230, 230, 175);
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    border: black solid 2px;
+    opacity: 0.865;
+}
+
+h1{
+    font-family: 'Cinzel', serif;
+    font-size: 50px;
+    word-spacing: 10px;
+    letter-spacing: 2px;
+}
+
+h2{
+    font-family: 'EB Garamond', serif;
+    font-size: 20px;
+    font-style: italic;
+}
+
+.image_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 400px;
+    padding: 20px;
+}
+
+.myself{
+    border-radius: 15px;
+    border: 10px solid rgb(39, 68, 83);  
+    height: auto;
+    width: 250px;
+}
+
+.information_container{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly; 
+    text-align: center;
+    align-items: center;
+    height: 475px;
+    width: 100%;
+    background:  rgba(58, 114, 146, 0.801); 
+    color:black;
+}
+
+p{
+    font-family: 'EB Garamond', serif;
+    font-size: 30px;
+    font-style: italic;
+    width: 700px;
+}
+
+.greeting{
+    font-size: 40px;
+}
+
+.title_backdrop_2{
+    display: flex;
+    height: 500px;
+    background-color: rgb(230, 230, 175);
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    border: black solid 2px;
+    opacity: 0.865;
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    height: 150px; 
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+}
+
+.ACA_link{
+    color:whitesmoke; 
+}
+
+@media(min-device-width:280px) and (max-device-width:1024px){
+
+    .top_container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+
+    ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+
+    }
+
+    .top_container > ul> li{
+        padding: 20px;
+    }
+
+    p{
+        width: auto;
+        height: auto;
+    }
+
+    .information_container{
+        height: relative;
+    }
+
+    .title_backdrop_2{
+        margin-top: 0;
+    }
+
+    .image_container{
+        padding: 0;
+    }
+
+    footer{
+        text-align: center;
+    }
+   
+}
+
+@media(max-device-width:425px){
+
+    .information_container{
+        height:auto;
+    }
+
+    .title_backdrop_2{
+        height: auto;
+        border-top:rgb(230, 230, 175) 10px solid;
+        border-bottom:rgb(230, 230, 175) 10px solid;
+    }
+
+}
