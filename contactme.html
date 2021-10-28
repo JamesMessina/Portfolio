@@ -29,10 +29,10 @@
             <h2>I'd Love To Hear From You</h2>
         </section>
         <section class="main-container">
-            <form action="" method="get" target="_blank">
+            <form onsubmit="submitForm()" method="get" target="_blank">
                 <div>
                     <label for="name">Name:</label><br>
-                    <input type="text" id="name" name="whole_name" placeholder="name" onkeyup="Capitalize()">
+                    <input type="text" id="name" name="whole_name" placeholder="name" onkeyup="Capitalize()" required>
                 </div>
                 <div>
                     <br><label for="email">E-Mail:</label><br>
@@ -47,14 +47,14 @@
                     <input type="address" id="address" name="address" placeholder="Mailing Address" onkeyup="Capitalize3()" required>
                 </div>
                 <div>
-                    <br><p>How did you hear about us?</p>
-                    <br><input type="checkbox" id="source1" name="source1" value="classmate">
+                    <br><p>How did you hear about me?</p>
+                    <br><input type="checkbox" id="source1" name="source1" value="">
                     <label for="source1">Google</label><br>
-                    <input type="checkbox" id="source2" name="source2" value="resume">
+                    <input type="checkbox" id="source2" name="source2" value="">
                     <label for="source2">Facebook</label><br>
-                    <input type="checkbox" id="source3" name="source3" value="linkedin">
+                    <input type="checkbox" id="source3" name="source3" value="">
                     <label for="source3">LinkedIn</label><br>
-                    <input type="checkbox" id="source4" name="source4" value="codingrep">
+                    <input type="checkbox" id="source4" name="source4" value="">
                     <label for="source4">Friend/Family Member</label>
                 </div>
                 <div>
@@ -62,7 +62,7 @@
                     <textarea id="questionsOrComments" name="questionsOrComments" minlength="20" maxlength="500" rows="4" cols="50"></textarea>
                 </div>
                 <div class="button-container">
-                    <br><input type="button" class="button" value="SEND">
+                    <br><input type="submit" class="button" value="SEND">
                 </div>
             </form>
         </section>
