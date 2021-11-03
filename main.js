@@ -16,15 +16,16 @@ function Capitalize3(){
 
 function submitForm(){
     const allInputs = document.querySelectorAll('input');
-    const textBox = document.querySelector('textarea');
-    textBox.value = ""; 
+
     for(let i = 0; i < allInputs.length; i++){
         if(allInputs[i].value === "SEND"){
             continue
         }else{
-            console.log(allInputs[i].value, allInputs[i].checked);
             allInputs[i].value = "";
-            allInputs[i].checked = false;  
+            allInputs[i].checked = false; 
+            const textBox = document.querySelector('textarea'); 
+            textBox.value = ""; 
         }
     }
 }
+

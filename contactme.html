@@ -29,7 +29,7 @@
             <h2>I'd Love To Hear From You</h2>
         </section>
         <section class="main-container">
-            <form onsubmit="submitForm()" method="get" target="_blank">
+            <form action="/formSubmission.html" onsubmit="submitForm()">
                 <div>
                     <label for="name">Name:</label><br>
                     <input type="text" id="name" name="whole_name" placeholder="name" onkeyup="Capitalize()" required>
@@ -46,23 +46,23 @@
                     <br><label for="address">Address:</label><br>
                     <input type="address" id="address" name="address" placeholder="Mailing Address" onkeyup="Capitalize3()" required>
                 </div>
-                <div>
+                <div class="checkbox-group required">
                     <br><p>How did you hear about me?</p>
-                    <br><input type="checkbox" id="source1" name="source1" value="">
+                    <br><input type="checkbox" id="source1" name="checkbox1" value="" >
                     <label for="source1">Google</label><br>
-                    <input type="checkbox" id="source2" name="source2" value="">
+                    <input type="checkbox" id="source2" name="checkbox2" value="" >
                     <label for="source2">Facebook</label><br>
-                    <input type="checkbox" id="source3" name="source3" value="">
+                    <input type="checkbox" id="source3" name="checkbox3" value="" >
                     <label for="source3">LinkedIn</label><br>
-                    <input type="checkbox" id="source4" name="source4" value="">
+                    <input type="checkbox" id="source4" name="checkbox4" value="" >
                     <label for="source4">Friend/Family Member</label>
                 </div>
                 <div>
                     <br><label for="questionsOrComments">Questions</label><br>
-                    <textarea id="questionsOrComments" name="questionsOrComments" minlength="20" maxlength="500" rows="4" cols="50"></textarea>
+                    <textarea id="questionsOrComments" name="questionsOrComments" minlength="20" maxlength="500" rows="4" cols="50" required></textarea>
                 </div>
                 <div class="button-container">
-                    <br><input type="submit" class="button" value="SEND">
+                    <br><input id="register" type="submit" class="button" value="SEND">
                 </div>
             </form>
         </section>

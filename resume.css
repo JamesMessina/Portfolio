@@ -20,6 +20,10 @@ body,html{
     font-size: 75px;
 }
 
+.facebook_container{
+    cursor: pointer;
+    height: fit-content;
+}
 
 .name_container{
     padding-top: 30px;
@@ -112,6 +116,10 @@ img{
     font-size: 20px;
 }
 
+.mail_container{
+    height: fit-content
+}
+
 .fb_icon{
     border: inherit;
     height: auto;
@@ -122,6 +130,19 @@ img{
 .fb_handle{
     padding-top: 20px;
     font-size: 17px;
+}
+
+.linkedin_container{
+    cursor: pointer;
+}
+
+.location_logo{
+    cursor: pointer;
+    height: fit-content;
+}
+
+.mail_container{
+    cursor: pointer;
 }
 
 .linked_icon{
@@ -309,6 +330,7 @@ span{
 
     .fb_icon{
         padding-right: 400px;
+        cursor: grab
     }
 
     .linked_icon{
