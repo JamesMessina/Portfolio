@@ -134,6 +134,7 @@ img{
 
 .linkedin_container{
     cursor: pointer;
+    height: fit-content;
 }
 
 .location_logo{

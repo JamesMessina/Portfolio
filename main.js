@@ -1,4 +1,3 @@
-
 function Capitalize(){
     var x = document.getElementById("name");
     x.value = x.value.toUpperCase();
