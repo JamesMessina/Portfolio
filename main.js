@@ -28,3 +28,6 @@ function submitForm(){
     }
 }
 
+function goBack() {
+    window.location='./contactme.html'
+}
