@@ -177,6 +177,7 @@ img{
 .expertise_info{
     padding-top: 30px;
     font-size: 25px;
+    text-align: center;
 }
 
 .prof_hist{
@@ -310,7 +311,7 @@ span{
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 0;
+        width:auto
     }
 
     .main_container{
@@ -319,25 +320,22 @@ span{
         margin-top: 0;
     }
 
-    .phone{
-        padding-right: 400px;
-    }
-
-    .globe{
-        padding-right: 400px;
-    }
-
-    .letter{
-        padding-right: 400px;
+    .phone_container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     .fb_icon{
-        padding-right: 400px;
         cursor: grab
     }
 
-    .linked_icon{
-        padding-right: 400px;
+    .facebook_container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 }
 
