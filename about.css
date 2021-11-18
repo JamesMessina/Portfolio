@@ -137,7 +137,8 @@ body, html{
         align-items: center;
         width: 100%;
         height: auto;
-        position:static; 
+        text-align: center;
+        position: static;
     }
 
     ul{
@@ -153,9 +154,16 @@ body, html{
     }
 
     .main_container{
+        display:flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
         height: auto;
-        width: auto;
-        position: relative;
+        position: relative
+    }
+
+    #me {
+        width: 70%
     }
 
     .backdrop{
@@ -163,13 +171,16 @@ body, html{
         width: auto;
         position: relative;
     }
-}
 
-@media(max-device-width: 425px){
-    .main_container{
+    .img_container {
         display: flex;
-        flex-direction: column;
-        overflow: hidden;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    footer {
+        text-align: center;
     }
 }
 
