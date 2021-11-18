@@ -191,3 +191,16 @@ form{
         text-align: center;
     }
 }
+
+@media(min-device-width:280px) and (max-device-width:1024px){
+    .top_container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        text-align: center;
+        position: static;
+    }
+}
