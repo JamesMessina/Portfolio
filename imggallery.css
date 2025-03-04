@@ -111,14 +111,13 @@ h2{
     flex-wrap: wrap;
     height: auto;
     width:auto;
-    padding: 50px;
     justify-content: space-between;
     list-style: none;
-    margin-left: 150px;
-    margin-right: 150px;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 100px;
 }
+
 
 img{
     height: 250px;
@@ -126,7 +125,6 @@ img{
 }
 
 #image_container_1{
-    position: relative;
     padding: 10px;
     background-color: white;
     border: black 2px solid;
