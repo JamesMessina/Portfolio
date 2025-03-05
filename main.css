@@ -22,7 +22,7 @@ body, html{
     position: sticky;
     position: -webkit-sticky; 
     top: 0;
-    background-color: bisque;
+    background-color: rgb(39, 68, 83);
     z-index: 1;
     transition: 500ms;
     font-size: 30px;
@@ -52,8 +52,9 @@ ul > li{
 
 .ACA-logo{
     height: 200px;
-    width: 200px;
+    width: 400px;
     transition: transform 2s ease-in 500ms;
+    border-radius: 10px;
 }
 
 .ACA-logo:hover{
