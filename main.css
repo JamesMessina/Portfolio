@@ -22,7 +22,7 @@ body, html{
     position: sticky;
     position: -webkit-sticky; 
     top: 0;
-    background-color: rgb(39, 68, 83);
+    background-color: #2c0836;
     z-index: 1;
     transition: 500ms;
     font-size: 30px;
@@ -43,7 +43,7 @@ ul > li{
     text-decoration: none;
     letter-spacing: 5px;
     font-family: 'IM Fell DW Pica SC', serif;
-    color:black;
+    color:#eadddf;
 }
 
 .top_container > ul > li:hover{
@@ -52,9 +52,9 @@ ul > li{
 
 .ACA-logo{
     height: 200px;
-    width: 400px;
+    width: 250px;
     transition: transform 2s ease-in 500ms;
-    border-radius: 10px;
+    
 }
 
 .ACA-logo:hover{
